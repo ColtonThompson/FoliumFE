@@ -1,14 +1,12 @@
 ﻿import React from "react";
 
-export default function DropdownBox({options, label})
-{
-    
+export default function DropdownBox({options, label}) {
     return (
         <React.Fragment>
             <label>{label}</label>
-            <br />
+            <br/>
             <select>
-                {options.map((option) => (
+                {options.map((option: string) => (
                     <option key={option} value={option}>
                         {option}
                     </option>
