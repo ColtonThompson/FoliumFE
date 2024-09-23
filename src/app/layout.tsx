@@ -5,13 +5,13 @@ import "@/app/style/globals.css";
 import "primereact/resources/themes/viva-dark/theme.css";
 
 const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
+    src: "./style/fonts/GeistVF.woff",
     variable: "--font-geist-sans",
     weight: "100 900",
 });
 
 const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
+    src: "./style/fonts/GeistMonoVF.woff",
     variable: "--font-geist-mono",
     weight: "100 900",
 });

@@ -1,6 +1,5 @@
 ﻿import React from "react";
-
-import {Menubar} from "primereact/menubar";
+import MyInputFormTab from "@/app/components/InputFormTab";
 
 export default function Dashboard() {
 
@@ -57,11 +56,11 @@ export default function Dashboard() {
                 <title>Dashboard</title>
             </head>
             <div>
-                <Menubar model={items}/>
+                <MyInputFormTab/>
             </div>
 
             <footer>
-                Footer goes here!
+                
             </footer>
         </React.Fragment>
     )
