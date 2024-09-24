@@ -12,7 +12,7 @@ export default function MyInputFormTab() {
                     <label htmlFor="zip" className="font-bold block mb-2">
                         Zip Code Example:
                     </label>
-                    <InputMask id="zip" value={zipCode} onChange={(e) => setZipCode(e.target.value)} mask="99999? -9999"
+                    <InputMask id="zip" value={zipCode} onChange={(e) => setZipCode(e.target.value)} mask="99999?-9999"
                                placeholder="12345-1234"
                     />
                     <br/>
