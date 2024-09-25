@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+        <head>
+            <title>FoliumFE</title>
+        </head>
         <PrimeReactProvider>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
             {children}
