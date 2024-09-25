@@ -2,7 +2,6 @@ import type {Metadata} from "next";
 import {PrimeReactProvider} from 'primereact/api';
 import localFont from "next/font/local";
 import "@/app/style/globals.css";
-import "primereact/resources/themes/viva-dark/theme.css";
 
 const geistSans = localFont({
     src: "./style/fonts/GeistVF.woff",
