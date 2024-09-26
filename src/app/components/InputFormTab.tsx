@@ -88,13 +88,15 @@ export default function MyInputFormTab() {
                 <div
                     className="rounded-t-lg overflow-hidden px-3 py-10 flex justify-center">
                     <div className="w-full max-w-xs md:mt-0">
-                        <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <form className="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+
                             <div className="mb-4">
-                                <label htmlFor="zip" className="block text-gray-700 text-sm font-bold mb-2">
+                                <label htmlFor="zip"
+                                       className="block mb-2 text-sm font-medium text-white">
                                     Zip Code
                                 </label>
                                 <InputText
-                                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    className="shadow border rounded w-full md:w-14rem py-2 px-3 text-white focus:shadow-outline"
                                     id="zip" value={zipCode} placeholder="#####-####"
                                     onChange={(e) => {
                                         setZipCode(e.target.value);
@@ -103,30 +105,30 @@ export default function MyInputFormTab() {
                             </div>
 
                             <div className="mb-4">
-
                                 <label htmlFor="stateDropDown"
-                                       className="block text-gray-700 text-sm font-bold mb-2">
+                                       className="block mb-2 text-sm font-medium text-white">
                                     State
                                 </label>
-                                <Dropdown id="stateDropDown" value={state} onChange={(e) => setState(e.value)}
+                                <Dropdown id="stateDropDown" data-testid="droptest" value={state}
+                                          onChange={(e) => setState(e.value)}
                                           options={states} optionLabel="name"
                                           editable
-                                          className="shadow border rounded w-full md:w-14rem py-2 px-3 text-black focus:shadow-outline"/>
-
+                                          className="shadow border rounded w-full md:w-14rem py-2 px-3 text-white focus:shadow-outline"/>
                             </div>
 
                             <div className="mb-6">
-                                <label htmlFor="other" className="block text-gray-700 text-sm font-bold mb-2">
+                                <label htmlFor="other" className="block mb-2 text-sm font-medium text-white">
                                     Other
                                 </label>
                                 <InputText
-                                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                                     id="other" value="" placeholder="Other useful info!">Other</InputText>
                             </div>
 
-                            <p className="text-black">You entered: {zipCode}</p>
+                            <p className="text-sm font-light text-gray-500 dark:text-gray-400">You
+                                entered: {zipCode}</p>
                             <Button
-                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                                 icon="pi pi-check" id="submitButton" label="Click Me"
                                 onClick={handleButtonClick}></Button>
 
